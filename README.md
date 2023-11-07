@@ -1,3 +1,5 @@
 # make-goggles
 
-A collection of Make.com automation scenario blueprints managed by the Axelerant.com/about team for public reference.
+A collection of Make.com automation scenario blueprints managed by the [Axelerant team](https://Axelerant.com/about) for public reference.
+
+More about [Open Axelerant](https://axelerant.atlassian.net/wiki/spaces/OA/).
