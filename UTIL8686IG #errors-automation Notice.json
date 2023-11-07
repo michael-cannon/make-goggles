@@ -280,12 +280,14 @@
                 "__IMTCONN__": 1792755
             },
             "mapper": {
+                "channelWType": "manualy",
                 "text": "{{8.`Slack Content`}}",
+                "thread_ts": "{{ifempty(9.ts; ignore)}}",
                 "parse": false,
                 "mrkdwn": true,
-                "channel": "{{8.`Slack Channel`}}",
-                "thread_ts": "{{ifempty(9.ts; ignore)}}",
-                "channelWType": "manualy"
+                "unfurl_links": false,
+                "unfurl_media": false,
+                "channel": "{{8.`Slack Channel`}}"
             },
             "metadata": {
                 "designer": {
@@ -293,36 +295,36 @@
                     "y": 0
                 },
                 "restore": {
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "label": "Axelerant - Automation Slack v5 (automation)",
+                            "data": {
+                                "scoped": "true",
+                                "connection": "slack2"
+                            }
+                        }
+                    },
                     "expect": {
+                        "channelWType": {
+                            "label": "Enter manually"
+                        },
+                        "reply_broadcast": {
+                            "mode": "chose"
+                        },
+                        "link_names": {
+                            "mode": "chose"
+                        },
                         "parse": {
                             "mode": "chose"
                         },
                         "mrkdwn": {
                             "mode": "chose"
                         },
-                        "link_names": {
-                            "mode": "chose"
-                        },
-                        "channelWType": {
-                            "label": "Enter manually"
-                        },
                         "unfurl_links": {
                             "mode": "chose"
                         },
                         "unfurl_media": {
                             "mode": "chose"
-                        },
-                        "reply_broadcast": {
-                            "mode": "chose"
-                        }
-                    },
-                    "parameters": {
-                        "__IMTCONN__": {
-                            "data": {
-                                "scoped": "true",
-                                "connection": "slack2"
-                            },
-                            "label": "Axelerant - Automation Slack v5 (automation)"
                         }
                     }
                 },
